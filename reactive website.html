@@ -18,11 +18,11 @@
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#portfolio">PORFOLIO</a></li>
                     <li><a href="#contact">CONTACE INFO</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <!--<i class="fa-solid fa-xmark" onclick="closemenu()"></i>-->
     
     
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!--<i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
             </nav>
             <div class="header">
                 <p>programmer</p>
@@ -43,7 +43,7 @@
                 <p>hey! I am harshita currently an undergrad student in nsut .</p>
                 <div class="tabtitles">
                     <p class="tab-links activelink" onclick="opentab('skills')">skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <!--<p class="tab-links" onclick="opentab('experience')">experience</p>-->
                     <p class="tab-links" onclick="opentab('education')">education</p>
                 </div>
                 <div class="tabcontent activetab" id="skills">
@@ -53,13 +53,7 @@
             
                     </ul>
                 </div>
-                <div class="tabcontent" id="experience">
-                    <ul>
-                        <li><span>UI/UX</span><br>designing web/app interference</li>
-                        <li>web development 1</li>
-                        <li>app development</li>
-                    </ul>
-                </div>
+                
                 <div class="tabcontent" id="education">
                     <ul>
                         <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.61gpa)</li>
@@ -116,17 +110,17 @@
             <div class="work">
                 <img src="work-2.png" >
                 <div class="layer">
-                    <h3>DSA</h3>
-                    <p>300+QUESTIONS on leetcode,codechef,geeksforgeeks</p>
+                    <h3>WEATHER APP</h3>
+                    <P>weather app using html,css and javascript linked with api gives updated weather information of cities searched</P>
                 </div>
             </div>
-            <div class="work">
+           <!-- <div class="work">
                 <img src="work-3.png" >
                 <div class="layer">
                     <h3>Competitive programming</h3>
                     <p>codechef,leetcode,codeforces</p>
                 </div>
-            </div>
+            </div>-->
         </div>
        <a href="#" class="btn">see more</a>
 
@@ -140,8 +134,8 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="subtitle">contact me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                <p><i class="fa-solid fa-phone"></i>01234456</p>
+                <p><i class="fa-solid fa-paper-plane"></i>harshitaghughutiyal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-8233659718</p>
                 <div class="social-icons">
                      <a href="<i class="fa-brands fa-linkedin"></i>"></a>
                      <a href="<i class="fa-brands fa-twitter"></i>"></a>
@@ -185,27 +179,6 @@
 
     }
 </script>
-<script>
-   var side=document.getElementById("sidemenu");
-   function openmenu(){
-    side.style.right="0";
-   }
-   function closemenu(){
-    side.style.right="-200px"
-   }
 
-
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby6tJ8ESQGsIiaa6kIqRQ5zBxq0CzBIiju_NbHUiY5BwxpkAKbHTKBsBXZMbqYmwOoX/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 </body>
 </html>
