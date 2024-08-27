@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>harshita's reactive website </title>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="update.css">
     <script src="https://kit.fontawesome.com/959f335986.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,12 +21,12 @@
                     <!--<i class="fa-solid fa-xmark" onclick="closemenu()"></i>-->
     
     
-                </ul>
+                </ul> 
                 <!--<i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
             </nav>
             <div class="header">
                 <p>programmer</p>
-                <h1>hey i am <br> <span>harshita</span></h1>
+                <h1>hey i am <br> <span>Harshita</span></h1>
             </div>
         </div>
 
@@ -39,8 +39,8 @@
                  <img src="user.jpg" >
             </div>
             <div class="about-col-2">
-                <h1 class="subtitle">about me</h1>
-                <p>hey! I am harshita currently an undergrad student in nsut .</p>
+                <h1 class="subtitle">About me</h1>
+                <p>hey! I am Harshita currently an undergrad student in Netaji Subhas University of Technology.</p>
                 <div class="tabtitles">
                     <p class="tab-links activelink" onclick="opentab('skills')">skills</p>
                     <!--<p class="tab-links" onclick="opentab('experience')">experience</p>-->
@@ -56,8 +56,8 @@
                 
                 <div class="tabcontent" id="education">
                     <ul>
-                        <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.61gpa)</li>
-                        <li><span>DPS R.K Puram</span><br>pcm,english with computer science<br>2018-2022<br>12th boards:93%<br>10th boards:93.8%</li>
+                        <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.55gpa)</li>
+                        <li><span>DPS R.K Puram</span><br>PCM,English with Computer Science<br>2018-2022<br>12th boards:93%<br>10th boards:93.8%</li>
                         <li><span>Shree Agresen academy,Assam</span><br>A+</li>
                     </ul>
                 </div>
@@ -146,7 +146,7 @@
             
             </div>
             <div class="contact-right">
-                <form name="'submit-to-google-sheet'">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="name" placeholder="your name" required>
                     <input type="email" name="email" placeholder="your email" required>
                     <textarea name="message" id=""  rows="6" placeholder="your message"></textarea>
@@ -179,6 +179,16 @@
 
     }
 </script>
-
+<script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbw4KcdYpeYxwSjlxRJ8a3vj3XXhHoCzytYccTADZN9hd905eCLuM7VfnXBmASn5enOv/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
