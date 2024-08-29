@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>harshita's reactive website </title>
-    <link rel="stylesheet" href="styling.css">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="update.css">
     <script src="https://kit.fontawesome.com/959f335986.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,9 +25,9 @@
                 <!--<i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
             </nav>
             <div class="header">
-                <p>programmer</p>
-                <h1>hey i am <br> <span>Harshita</span></h1>
+                <h1>hey i am <span class="auto-type"></span></h1>
             </div>
+           
         </div>
 
     </div>
@@ -46,6 +46,13 @@
                     <!--<p class="tab-links" onclick="opentab('experience')">experience</p>-->
                     <p class="tab-links" onclick="opentab('education')">education</p>
                 </div>
+                <div class="tabcontent" id="education">
+                    <ul>
+                        <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.55gpa)</li>
+                        <li><span>DPS R.K Puram</span><br>PCM,English with Computer Science<br>2018-2022<br>12th boards:93%<br>10th boards:93.8%</li>
+                        <li><span>Shree Agresen academy,Assam</span><br>A+</li>
+                    </ul>
+                </div>
                 <div class="tabcontent activetab" id="skills">
                     <ul>
                         <li><span>web development</span><br>html,css javascript</li>
@@ -54,13 +61,7 @@
                     </ul>
                 </div>
                 
-                <div class="tabcontent" id="education">
-                    <ul>
-                        <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.55gpa)</li>
-                        <li><span>DPS R.K Puram</span><br>PCM,English with Computer Science<br>2018-2022<br>12th boards:93%<br>10th boards:93.8%</li>
-                        <li><span>Shree Agresen academy,Assam</span><br>A+</li>
-                    </ul>
-                </div>
+                
 
 
             </div>
@@ -75,17 +76,13 @@
 
 <div id="services">
    <div class="container">
-    <h1 class="subtitle">services</h1>
+    <h1 class="subtitle">Services</h1>
     <div class="services-list">
-        <div>
-            <h1>web development</h2>
-            <p>basics of web development using html,css and javascript.Creating a responsive portfolio website</p>
-            <a href="#">learn more</a>
-        </div>
+        
         <div>
             <h1>Codess Cafe: mentee</h2>
             <p>A community of empowered women in tech</p>
-            <a href="#">learn more</a>
+            <a href="https://codess.cafe/">learn more</a>
         </div>
         
 
@@ -98,21 +95,21 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="subtitle">my work</h1>
+        <h1 class="subtitle">Projects/Skills</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="work-1.png" >
-                <div class="layer">
-                    <h3>web development </h3>
-                    <p>responsive portfolio website</p>
-                </div>
-            </div>
             <div class="work">
                 <img src="work-2.png" >
                 <div class="layer">
                     <h3>WEATHER APP</h3>
                     <P>weather app using html,css and javascript linked with api gives updated weather information of cities searched</P>
+                    <a href="https://harshitaexplorer.github.io/weather/">go to site</a>
                 </div>
+            </div>
+            <div class="platform">
+        
+                <p><a href="https://leetcode.com/u/explorer18/"><i class="fa-solid fa-arrow-up-right-from-square"></i>LeetCode</a></p>
+                <p><a href="https://www.codechef.com/users/explorer18"><i class="fa-solid fa-arrow-up-right-from-square"></i>Codechef</a></p>
+                <p><a href="https://www.geeksforgeeks.org/user/harshitaghgrw0/"><i class="fa-solid fa-arrow-up-right-from-square"></i>geeksforgeeks</a></p>            
             </div>
            <!-- <div class="work">
                 <img src="work-3.png" >
@@ -122,7 +119,7 @@
                 </div>
             </div>-->
         </div>
-       <a href="#" class="btn">see more</a>
+       <!-- <a href="#" class="btn">see more</a> -->
 
     </div>
 </div>
@@ -133,7 +130,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="subtitle">contact me</h1>
+                <h1 class="subtitle">Contact me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>harshitaghughutiyal@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>+91-8233659718</p>
                <!-- <div class="social-icons">
@@ -190,5 +187,13 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+       var typed = new Typed(".auto-type", {
+           strings: ["Harshita"],
+           typeSpeed: 150,
+           loop: true,
+       });
+   </script>
 </body>
 </html>
